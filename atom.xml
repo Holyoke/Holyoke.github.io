@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>LG的网站</title>
+  
+  <subtitle>允公允能，日新月异</subtitle>
+  <link href="http://holyoke.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://holyoke.github.io/"/>
+  <updated>2022-09-19T15:44:16.027Z</updated>
+  <id>http://holyoke.github.io/</id>
+  
+  <author>
+    <name>Grail Lee</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>grep笔记</title>
+    <link href="http://holyoke.github.io/2022/09/19/grep-bi-ji/"/>
+    <id>http://holyoke.github.io/2022/09/19/grep-bi-ji/</id>
+    <published>2022-09-19T09:02:04.000Z</published>
+    <updated>2022-09-19T15:44:16.027Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;grep用法：&quot;&gt;&lt;a href=&quot;#grep用法：&quot; class=&quot;headerlink&quot; title=&quot;grep用法：&quot;&gt;&lt;/a&gt;grep用法：&lt;/h1&gt;&lt;h3 id=&quot;定义：用于文本查找&quot;&gt;&lt;a href=&quot;#定义：用于文本查找&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Markdown" scheme="http://holyoke.github.io/categories/Markdown/"/>
+    
+    
+    <category term="linux Typroya Markdown" scheme="http://holyoke.github.io/tags/linux-Typroya-Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>My blog</title>
+    <link href="http://holyoke.github.io/2022/09/18/blog-one/"/>
+    <id>http://holyoke.github.io/2022/09/18/blog-one/</id>
+    <published>2022-09-18T03:49:11.000Z</published>
+    <updated>2022-09-19T15:47:17.232Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h1 id=&quot;-1&quot;&gt;&lt;a href=&quot;#-1&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h1 id=&quot;首次尝试&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Blogs" scheme="http://holyoke.github.io/categories/Blogs/"/>
+    
+    
+    <category term="first attempt" scheme="http://holyoke.github.io/tags/first-attempt/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://holyoke.github.io/2022/09/18/hello-world/"/>
+    <id>http://holyoke.github.io/2022/09/18/hello-world/</id>
+    <published>2022-09-18T03:23:29.645Z</published>
+    <updated>2022-09-18T03:18:11.596Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
