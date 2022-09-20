@@ -209,11 +209,11 @@
     <ul class="sub-nav menus_item_child ">
       
       <li>
-        <a href="/musics">
+        <a href="/music">
           
           <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
           
-          <span>Musics</span>
+          <span>Music</span>
         </a>
       </li>
       
@@ -367,11 +367,11 @@
               
                 <li>
 
-                  <a href="/musics " style="margin-left:75px">
+                  <a href="/music " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
 			      
-		          <span>Musics</span>
+		          <span>Music</span>
                   </a>
                 </li>
               
@@ -542,7 +542,7 @@
                 </a>
 
                 
-                    <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light btn" target="_blank">
+                    <a href="https://github.com/Holyoke" class="waves-effect waves-light btn" target="_blank">
                         <i class="fab fa-github-alt"></i>Github
                     </a>
                 
@@ -675,6 +675,41 @@
                     
 
                     
+                        <link rel="stylesheet" href="/libs/dplayer/DPlayer.min.css">
+<div class="video-player">
+    
+    <div class="title center-align">
+        <i class="fas fa-video-camera"></i>&nbsp;&nbsp;精彩视频
+    </div>
+    
+    <div class="row">
+		
+			<iframe src='//player.bilibili.com/player.html?aid=669520137&bvid=BV1oa4y1L7mw&cid=234543483&page=1' scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" align="middle"  width="100%"> </iframe>
+		
+    </div>
+</div>
+
+<script src="/libs/dplayer/DPlayer.min.js"></script>
+<script>
+    $(function () {
+        new DPlayer({
+            container: document.getElementById('dplayer'),
+            autoplay: 'false' === 'true',
+            theme: '#42b983',
+            loop: 'false' === 'true',
+            lang: 'zh-CN' === 'zh-CN' ? 'zh-cn' : 'en',
+            preload: 'auto',
+            volume: Number('0.7'),
+            video: {
+                url: '',
+                pic: '',
+                thumbnails: ''
+            }
+        });
+    });
+</script>
+
+                    
 
                     
                     <div id="recommend-sections" class="recommend">
@@ -695,6 +730,104 @@
     <!-- 所有文章卡片 -->
     <article id="articles" class="container articles">
         <div class="row article-row">
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/09/20/metagenes/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="MetaGeneS">
+                            
+                            <span class="card-title">MetaGeneS</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                基因预测
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/linux-machine-learning/" class="post-category">
+                                    linux machine learning
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/machine-learning/">
+                            <span class="chip bg-color">machine learning</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/09/20/socket-jin-cheng-jian-tong-xin/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="socket进程间通信">
+                            
+                            <span class="card-title">socket进程间通信</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                网络通信
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/web-net/" class="post-category">
+                                    web net
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/socket/">
+                            <span class="chip bg-color">socket</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
             
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">

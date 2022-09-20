@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>MetaGeneS</title>
+      <link href="/2022/09/20/metagenes/"/>
+      <url>/2022/09/20/metagenes/</url>
+      
+        <content type="html"><![CDATA[<h1 id="MetaGeneS"><a href="#MetaGeneS" class="headerlink" title="MetaGeneS"></a>MetaGeneS</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># gff文件一共9列，分别如下：</span><br><span class="line">①seqid（序列ID）：通常为染色体的ID；</span><br><span class="line">②source（注释的来源）：表示产生此文件的软件或方法；</span><br><span class="line">③type（类型）：表示区间特性类型，如gene，repeat_region，exon，CDS等；</span><br><span class="line">④start（起始位点）：特征区间的起始位置；</span><br><span class="line">⑤end（结束位点）：特征区间的终止位置；</span><br><span class="line">⑥score（得分）：表示注释信息可靠性；</span><br><span class="line">⑦strand（正/负链）：&quot;＋&quot;：正链，&quot;－&quot;：负链；</span><br><span class="line">⑧phase（步进）：对于编码蛋白质的CDS，本列指定下一个密码子开始的位置。可以是0，1，2。表示到达下一个密码子要跳过的碱基个数;</span><br><span class="line">⑨attribut（属性）：基因ID，长度等信息；多个属性之间用&quot;;&quot;分号分隔。</span><br></pre></td></tr></table></figure><h5 id="结果文件"><a href="#结果文件" class="headerlink" title="结果文件"></a>结果文件</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Escherichia_coli.gff #储存基因结构信息</span><br><span class="line">Escherichia_coli_gene.fasta #预测基因组的核苷酸序列</span><br><span class="line">Escherichia_coli_protein.fasta #预测基因组的蛋白质序列</span><br></pre></td></tr></table></figure><h5 id="下载方法"><a href="#下载方法" class="headerlink" title="下载方法"></a>下载方法</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># 下载软件和密钥</span><br><span class="line">wget http://topaz.gatech.edu/GeneMark/tmp/GMtool_dHlO8/gms2_linux_64.tar.gz</span><br><span class="line">wget http://topaz.gatech.edu/GeneMark/tmp/GMtool_dHlO8/gm_key_64.gz</span><br><span class="line"># 解压软件</span><br><span class="line">tar -zxvf gms2_linux_64.tar.gz</span><br><span class="line">gunzip -c gm_key_64.gz &gt; ~/.gmhmmp2_key</span><br><span class="line"># 将软件添加到环境变量</span><br><span class="line">vim ~/.bashrc</span><br><span class="line">PATH=$PATH:/opt/biosoft/gms2_linux_64</span><br><span class="line">source ~/.bashrc</span><br></pre></td></tr></table></figure><h5 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://exon.gatech.edu/GeneMark/</span><br></pre></td></tr></table></figure><p><img src="wlop-43se.jpg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux machine learning </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> machine learning </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>socket进程间通信</title>
+      <link href="/2022/09/20/socket-jin-cheng-jian-tong-xin/"/>
+      <url>/2022/09/20/socket-jin-cheng-jian-tong-xin/</url>
+      
+        <content type="html"><![CDATA[<h1 id="socket进程间通信"><a href="#socket进程间通信" class="headerlink" title="socket进程间通信"></a>socket进程间通信</h1><h2 id="1-本地进程间通信（IPC）："><a href="#1-本地进程间通信（IPC）：" class="headerlink" title="1.本地进程间通信（IPC）："></a>1.本地进程间通信（IPC）：</h2><p>​        消息传递（管道、FIFO、消息队列）</p><p>​        同步（互斥量、条件变量、读写锁、文件和写记录锁、信号量）</p><p>​        共享内存（匿名和具名，mail）</p><p>​        远程过程调用（Solaris门和Sun RPC）</p><h2 id="2-socket基本操作"><a href="#2-socket基本操作" class="headerlink" title="2.socket基本操作"></a>2.socket基本操作</h2><h5 id="socket-函数："><a href="#socket-函数：" class="headerlink" title="socket()函数："></a>socket()函数：</h5><p><code>int socket(int domain, int type, int protocol);</code></p><ul><li>domain：即协议域，又称为协议族（family）。常用的协议族有，AF_INET、AF_INET6、AF_LOCAL（或称AF_UNIX，Unix域socket）、AF_ROUTE等等。协议族决定了socket的地址类型，在通信中必须采用对应的地址，如AF_INET决定了要用ipv4地址（32位的）与端口号（16位的）的组合、AF_UNIX决定了要用一个绝对路径名作为地址。</li><li>type：指定socket类型。常用的socket类型有，SOCK_STREAM、SOCK_DGRAM、SOCK_RAW、SOCK_PACKET、SOCK_SEQPACKET等等（socket的类型有哪些？）。</li><li>protocol：故名思意，就是指定协议。常用的协议有，IPPROTO_TCP、IPPTOTO_UDP、IPPROTO_SCTP、IPPROTO_TIPC等，它们分别对应TCP传输协议、UDP传输协议、STCP传输协议、TIPC传输协议。</li></ul><h2 id="3-socket中TCP三次握手"><a href="#3-socket中TCP三次握手" class="headerlink" title="3.socket中TCP三次握手"></a>3.socket中TCP三次握手</h2><ul><li>客户端向服务器发送一个SYN J</li><li>服务器向客户端响应一个SYN K，并对SYN J进行确认ACK J+1</li><li>客户端再想服务器发一个确认ACK K+1</li></ul><p><img src="97209d9c3394eb4cf950be75ffc38c56.jpg" alt="meinv"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> web net </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> socket </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>grep笔记</title>
       <link href="/2022/09/19/grep-bi-ji/"/>
       <url>/2022/09/19/grep-bi-ji/</url>
@@ -33,7 +83,7 @@
       <link href="/2022/09/18/blog-one/"/>
       <url>/2022/09/18/blog-one/</url>
       
-        <content type="html"><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1><h1 id="首次尝试"><a href="#首次尝试" class="headerlink" title="首次尝试"></a>首次尝试</h1><p>啥内容也没有</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="首次尝试"><a href="#首次尝试" class="headerlink" title="首次尝试"></a>首次尝试</h1><p>啥内容也没有</p><p><img src="wlop-43se-16636698332782.jpg"></p>]]></content>
       
       
       <categories>

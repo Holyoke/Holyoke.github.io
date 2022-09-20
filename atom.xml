@@ -6,7 +6,7 @@
   <link href="http://holyoke.github.io/atom.xml" rel="self"/>
   
   <link href="http://holyoke.github.io/"/>
-  <updated>2022-09-19T15:44:16.027Z</updated>
+  <updated>2022-09-20T10:35:47.285Z</updated>
   <id>http://holyoke.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MetaGeneS</title>
+    <link href="http://holyoke.github.io/2022/09/20/metagenes/"/>
+    <id>http://holyoke.github.io/2022/09/20/metagenes/</id>
+    <published>2022-09-20T10:08:42.000Z</published>
+    <updated>2022-09-20T10:35:47.285Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;MetaGeneS&quot;&gt;&lt;a href=&quot;#MetaGeneS&quot; class=&quot;headerlink&quot; title=&quot;MetaGeneS&quot;&gt;&lt;/a&gt;MetaGeneS&lt;/h1&gt;&lt;figure class=&quot;highlight</summary>
+        
+      
+    
+    
+    
+    <category term="linux machine learning" scheme="http://holyoke.github.io/categories/linux-machine-learning/"/>
+    
+    
+    <category term="machine learning" scheme="http://holyoke.github.io/tags/machine-learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>socket进程间通信</title>
+    <link href="http://holyoke.github.io/2022/09/20/socket-jin-cheng-jian-tong-xin/"/>
+    <id>http://holyoke.github.io/2022/09/20/socket-jin-cheng-jian-tong-xin/</id>
+    <published>2022-09-20T10:08:37.000Z</published>
+    <updated>2022-09-20T10:37:39.178Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;socket进程间通信&quot;&gt;&lt;a href=&quot;#socket进程间通信&quot; class=&quot;headerlink&quot; title=&quot;socket进程间通信&quot;&gt;&lt;/a&gt;socket进程间通信&lt;/h1&gt;&lt;h2 id=&quot;1-本地进程间通信（IPC）：&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="web net" scheme="http://holyoke.github.io/categories/web-net/"/>
+    
+    
+    <category term="socket" scheme="http://holyoke.github.io/tags/socket/"/>
+    
+  </entry>
   
   <entry>
     <title>grep笔记</title>
@@ -46,14 +96,15 @@
     <link href="http://holyoke.github.io/2022/09/18/blog-one/"/>
     <id>http://holyoke.github.io/2022/09/18/blog-one/</id>
     <published>2022-09-18T03:49:11.000Z</published>
-    <updated>2022-09-19T15:47:17.232Z</updated>
+    <updated>2022-09-20T11:09:36.573Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h1 id=&quot;-1&quot;&gt;&lt;a href=&quot;#-1&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h1 id=&quot;首次尝试&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;h1 id=&quot;首次尝试&quot;&gt;&lt;a href=&quot;#首次尝试&quot; class=&quot;headerlink&quot; title=&quot;首次尝试&quot;&gt;&lt;/a&gt;首次尝试&lt;/h1&gt;&lt;p&gt;啥内容也没有&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
         
       
     
