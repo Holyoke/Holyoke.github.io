@@ -6,7 +6,7 @@
   <link href="http://holyoke.github.io/atom.xml" rel="self"/>
   
   <link href="http://holyoke.github.io/"/>
-  <updated>2022-09-21T01:20:01.073Z</updated>
+  <updated>2022-09-21T08:36:58.954Z</updated>
   <id>http://holyoke.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Http协议</title>
+    <link href="http://holyoke.github.io/2022/09/21/http-xie-yi/"/>
+    <id>http://holyoke.github.io/2022/09/21/http-xie-yi/</id>
+    <published>2022-09-21T03:39:28.000Z</published>
+    <updated>2022-09-21T08:36:58.954Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;HTTP协议：&quot;&gt;&lt;a href=&quot;#HTTP协议：&quot; class=&quot;headerlink&quot; title=&quot;HTTP协议：&quot;&gt;&lt;/a&gt;HTTP协议：&lt;/h2&gt;&lt;p&gt;HTTP 是一个基于 TCP/IP 通信协议来传递数据（HTML</summary>
+        
+      
+    
+    
+    
+    <category term="cs" scheme="http://holyoke.github.io/categories/cs/"/>
+    
+    
+    <category term="http" scheme="http://holyoke.github.io/tags/http/"/>
+    
+  </entry>
   
   <entry>
     <title>CD-hit安装及使用</title>
