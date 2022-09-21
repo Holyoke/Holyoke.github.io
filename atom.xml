@@ -6,7 +6,7 @@
   <link href="http://holyoke.github.io/atom.xml" rel="self"/>
   
   <link href="http://holyoke.github.io/"/>
-  <updated>2022-09-20T10:35:47.285Z</updated>
+  <updated>2022-09-21T01:20:01.073Z</updated>
   <id>http://holyoke.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CD-hit安装及使用</title>
+    <link href="http://holyoke.github.io/2022/09/21/cd-hit-an-zhuang-ji-shi-yong/"/>
+    <id>http://holyoke.github.io/2022/09/21/cd-hit-an-zhuang-ji-shi-yong/</id>
+    <published>2022-09-21T01:06:15.000Z</published>
+    <updated>2022-09-21T01:20:01.073Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;CD-hit安装及使用&quot;&gt;&lt;a href=&quot;#CD-hit安装及使用&quot; class=&quot;headerlink&quot; title=&quot;CD-hit安装及使用&quot;&gt;&lt;/a&gt;CD-hit安装及使用&lt;/h1&gt;&lt;h1 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="linux" scheme="http://holyoke.github.io/categories/linux/"/>
+    
+    
+    <category term="linux Bioinformatics" scheme="http://holyoke.github.io/tags/linux-Bioinformatics/"/>
+    
+  </entry>
   
   <entry>
     <title>MetaGeneS</title>
