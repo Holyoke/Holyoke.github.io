@@ -512,7 +512,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-09-28
+                    2022-09-29
                 </div>
                 
 
@@ -550,6 +550,8 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.bahrc</span><br><span class="line"><span class="comment"># 文件末尾添加路径</span></span><br><span class="line"><span class="built_in">export</span> PATH=/src/bin:<span class="variable">$PATH</span></span><br><span class="line"><span class="comment"># 使生效</span></span><br><span class="line"><span class="built_in">source</span> ~/.bashrc</span><br></pre></td></tr></table></figure>
 
 <h5 id="ssh远端登录进入Conda环境"><a href="#ssh远端登录进入Conda环境" class="headerlink" title="ssh远端登录进入Conda环境"></a>ssh远端登录进入Conda环境</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&#x27;export PATH=&quot;~/anaconda3/bin:$PATH&quot;&#x27;</span>&gt;&gt;~/.bashrc</span><br><span class="line"><span class="built_in">source</span> ~/.bashrc</span><br></pre></td></tr></table></figure>
+
+<h5 id="终端进程控制"><a href="#终端进程控制" class="headerlink" title="终端进程控制"></a>终端进程控制</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看当前终端进行的任务</span></span><br><span class="line"><span class="built_in">jobs</span></span><br><span class="line"><span class="comment"># 查看系统进行的进程</span></span><br><span class="line">ps </span><br><span class="line"><span class="comment">#查看所有当前用户的进程</span></span><br><span class="line">ps -aux </span><br><span class="line"><span class="comment"># 杀死进程</span></span><br><span class="line"><span class="built_in">kill</span> %pid/jobnum</span><br><span class="line"><span class="comment"># 强制杀死进程</span></span><br><span class="line"><span class="built_in">kill</span> -9 %pid/jobnum</span><br><span class="line"><span class="comment"># 将前台执行的进程放入后台暂停</span></span><br><span class="line">Ctrl + z</span><br><span class="line"><span class="comment"># 将后台暂停命令，后台执行</span></span><br><span class="line"><span class="built_in">bg</span> %jobnum</span><br><span class="line"><span class="comment"># 将后台命令调前台继续运行</span></span><br><span class="line"><span class="built_in">fg</span> %jobnum</span><br></pre></td></tr></table></figure>
 
 
                 
