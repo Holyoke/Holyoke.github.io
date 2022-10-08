@@ -6,7 +6,7 @@
   <link href="http://holyoke.github.io/atom.xml" rel="self"/>
   
   <link href="http://holyoke.github.io/"/>
-  <updated>2022-09-29T10:04:13.127Z</updated>
+  <updated>2022-10-08T05:27:03.613Z</updated>
   <id>http://holyoke.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Diamond生信比对教程</title>
+    <link href="http://holyoke.github.io/2022/10/08/diamond-sheng-xin-bi-dui-jiao-cheng/"/>
+    <id>http://holyoke.github.io/2022/10/08/diamond-sheng-xin-bi-dui-jiao-cheng/</id>
+    <published>2022-10-08T05:00:33.000Z</published>
+    <updated>2022-10-08T05:27:03.613Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Diamond教程&quot;&gt;&lt;a href=&quot;#Diamond教程&quot; class=&quot;headerlink&quot; title=&quot;Diamond教程&quot;&gt;&lt;/a&gt;Diamond教程&lt;/h1&gt;&lt;h3 id=&quot;1-下载安装包&quot;&gt;&lt;a href=&quot;#1-下载安装包&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="生信" scheme="http://holyoke.github.io/categories/%E7%94%9F%E4%BF%A1/"/>
+    
+    
+    <category term="linux" scheme="http://holyoke.github.io/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux后台命令</title>

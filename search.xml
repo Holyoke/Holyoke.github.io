@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Diamond生信比对教程</title>
+      <link href="/2022/10/08/diamond-sheng-xin-bi-dui-jiao-cheng/"/>
+      <url>/2022/10/08/diamond-sheng-xin-bi-dui-jiao-cheng/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Diamond教程"><a href="#Diamond教程" class="headerlink" title="Diamond教程"></a>Diamond教程</h1><h3 id="1-下载安装包"><a href="#1-下载安装包" class="headerlink" title="1.下载安装包"></a>1.下载安装包</h3><p>wget <a href="http://github.com/bbuchfink/diamond/releases/download/v0.9.25/diamond-linux64.tar.gz">http://github.com/bbuchfink/diamond/releases/download/v0.9.25/diamond-linux64.tar.gz</a> </p><h3 id="2-解压"><a href="#2-解压" class="headerlink" title="2.解压"></a>2.解压</h3><p>进入到下载目录解压文件</p><p>tar -zxvf diamond-linux64.tar.gz</p><h3 id="3-部署bin根目录启动"><a href="#3-部署bin根目录启动" class="headerlink" title="3.部署bin根目录启动"></a>3.部署bin根目录启动</h3><p>sudo mv diamond  /usr/local/bin</p><hr><p>如上软件安装完成！</p><hr><h4 id="4-配置数据库"><a href="#4-配置数据库" class="headerlink" title="4.配置数据库"></a>4.配置数据库</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 下载nr库</span></span><br><span class="line"><span class="built_in">nohup</span> wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nr.gz 2&gt;&amp;1 &amp;</span><br><span class="line"><span class="comment"># 解压nr压缩包</span></span><br><span class="line">gunzip nr.gz</span><br><span class="line"><span class="comment"># 建库</span></span><br><span class="line">diamond makedb --<span class="keyword">in</span> nr --db nr</span><br><span class="line"><span class="comment"># -------------------------------------------------------------------</span></span><br><span class="line"><span class="comment">####NCBI-nr数据库下载</span></span><br><span class="line">wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nr.gz</span><br><span class="line"><span class="comment">####env_nr(来自环境的nr）数据库下载</span></span><br><span class="line">wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/env_nr.gz</span><br><span class="line"><span class="comment">####swissprot,高质量的蛋白数据库下载，蛋白序列得到实验的验证</span></span><br><span class="line">wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/swissprot.gz</span><br><span class="line"><span class="comment">###通用蛋白质资源（UniProt90）</span></span><br><span class="line">wget ftp://ftp.expasy.org/databases/uniprot/current_release/uniref/uniref90/uniref90.fasta.gz</span><br></pre></td></tr></table></figure><h4 id="5-比对"><a href="#5-比对" class="headerlink" title="5.比对"></a>5.比对</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># blastp 蛋白比对</span><br><span class="line">diamond blastp --db nr -q input.faa -o protein_matches_fmt6.txt</span><br><span class="line"># blastx DNA比对</span><br><span class="line">diamond blastx --db nr -q input.fna -o dna_matches_fmt6.txt</span><br></pre></td></tr></table></figure><p>注：默认以–outfmt 6输出结果和BLAST+的–outfmt 6结果一致</p><!--其他可以使用diamond help查询-->]]></content>
+      
+      
+      <categories>
+          
+          <category> 生信 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux后台命令</title>
       <link href="/2022/09/26/linux-hou-tai-ming-ling/"/>
       <url>/2022/09/26/linux-hou-tai-ming-ling/</url>
