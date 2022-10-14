@@ -540,8 +540,17 @@
 
 <h3 id="从fasta文件中提取rRNA"><a href="#从fasta文件中提取rRNA" class="headerlink" title="从fasta文件中提取rRNA"></a>从fasta文件中提取rRNA</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">barrnap \</span><br><span class="line"><span class="operator">--</span>kingdom bac \</span><br><span class="line"><span class="operator">--</span>threads <span class="number">4</span> \</span><br><span class="line"><span class="operator">--</span>outseq outwork.fa \</span><br><span class="line">testfile.fasta <span class="operator">&gt;</span> test.gff3</span><br></pre></td></tr></table></figure>
 
+<p><code>--kingdom</code>参数指定物种类型，<code>bac</code>代表细菌，<code>arc</code>代表古菌，<code>euk</code>代表真核生物，<code>mito</code>代表后生动物线粒体；<code>--threads</code>指定并行的线程数;<code>--outseq</code>: 保存结果序列；<code>&gt;</code>输出汇总表</p>
+<p><strong>该软件支持以下类型的rRNA的预测</strong></p>
+<ol>
+<li>bacteria (5S,23S,16S),</li>
+<li>archaea (5S,5.8S,23S,16S),</li>
+<li>metazoan mitochondria (12S,16S)</li>
+<li>eukaryotes (5S,5.8S,28S,18S)</li>
+</ol>
 <h5 id="结果集："><a href="#结果集：" class="headerlink" title="结果集："></a>结果集：</h5><p><img src="image-20221014134558962-16657263605661-16657263624793.png"></p>
 <p><img src="image-20221014134638954-16657264003665-16657264019047.png"></p>
+<h4 id="结果分析"><a href="#结果分析" class="headerlink" title="结果分析"></a>结果分析</h4><p>一个基因组会出现多条5S 23S 16S，可能是组装错误引起的，为了方便研究可以针对比较完整的（1.5KB）左右的16S rRNA进行分析</p>
 
                 
             </div>
