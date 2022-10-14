@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Barrnap预测rRNA基因</title>
+      <link href="/2022/10/14/barrnap-yu-ce-rrna-ji-yin/"/>
+      <url>/2022/10/14/barrnap-yu-ce-rrna-ji-yin/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Barrnap预测"><a href="#Barrnap预测" class="headerlink" title="Barrnap预测"></a>Barrnap预测</h1><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install <span class="operator">-</span>c bioconda <span class="operator">-</span>c conda<span class="operator">-</span>forge barrnap</span><br></pre></td></tr></table></figure><h3 id="从fasta文件中提取rRNA"><a href="#从fasta文件中提取rRNA" class="headerlink" title="从fasta文件中提取rRNA"></a>从fasta文件中提取rRNA</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">barrnap \</span><br><span class="line"><span class="operator">--</span>kingdom bac \</span><br><span class="line"><span class="operator">--</span>threads <span class="number">4</span> \</span><br><span class="line"><span class="operator">--</span>outseq outwork.fa \</span><br><span class="line">testfile.fasta <span class="operator">&gt;</span> test.gff3</span><br></pre></td></tr></table></figure><h5 id="结果集："><a href="#结果集：" class="headerlink" title="结果集："></a>结果集：</h5><p><img src="image-20221014134558962-16657263605661-16657263624793.png"></p><p><img src="image-20221014134638954-16657264003665-16657264019047.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生信 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> rRNA </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Diamond生信比对教程</title>
       <link href="/2022/10/08/diamond-sheng-xin-bi-dui-jiao-cheng/"/>
       <url>/2022/10/08/diamond-sheng-xin-bi-dui-jiao-cheng/</url>
