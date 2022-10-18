@@ -6,7 +6,7 @@
   <link href="http://holyoke.github.io/atom.xml" rel="self"/>
   
   <link href="http://holyoke.github.io/"/>
-  <updated>2022-10-14T06:17:58.265Z</updated>
+  <updated>2022-10-18T07:35:06.151Z</updated>
   <id>http://holyoke.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux用户管理与删除</title>
+    <link href="http://holyoke.github.io/2022/10/18/linux-yong-hu-guan-li-yu-shan-chu/"/>
+    <id>http://holyoke.github.io/2022/10/18/linux-yong-hu-guan-li-yu-shan-chu/</id>
+    <published>2022-10-18T07:04:08.000Z</published>
+    <updated>2022-10-18T07:35:06.151Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Linux用户管理&quot;&gt;&lt;a href=&quot;#Linux用户管理&quot; class=&quot;headerlink&quot; title=&quot;Linux用户管理&quot;&gt;&lt;/a&gt;Linux用户管理&lt;/h1&gt;&lt;figure class=&quot;highlight</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="http://holyoke.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="http://holyoke.github.io/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>Barrnap预测rRNA基因</title>
