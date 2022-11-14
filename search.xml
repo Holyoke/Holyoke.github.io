@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>conda使用</title>
+      <link href="/2022/11/14/conda-shi-yong/"/>
+      <url>/2022/11/14/conda-shi-yong/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Conda-教程"><a href="#Conda-教程" class="headerlink" title="Conda 教程"></a>Conda 教程</h1><h2 id="To-create-a-new-env"><a href="#To-create-a-new-env" class="headerlink" title="To create a new env."></a>To create a new env.</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda create --name snowflakes biopython # name后接env名，空格后接预置library名</span><br><span class="line">conda create --name mypthon3 python=3.6 numpy</span><br></pre></td></tr></table></figure><h2 id="Use-env"><a href="#Use-env" class="headerlink" title="Use env"></a>Use env</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">activate &quot;env_name&quot;</span><br><span class="line">deactivate</span><br></pre></td></tr></table></figure><h2 id="Envs-info"><a href="#Envs-info" class="headerlink" title="Envs info"></a>Envs info</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda info --envs # 查看所有conda_</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> bioinformatics </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux用户管理与删除</title>
       <link href="/2022/10/18/linux-yong-hu-guan-li-yu-shan-chu/"/>
       <url>/2022/10/18/linux-yong-hu-guan-li-yu-shan-chu/</url>
