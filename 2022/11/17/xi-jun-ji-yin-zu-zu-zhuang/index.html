@@ -512,7 +512,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-11-17
+                    2022-11-22
                 </div>
                 
 
@@ -538,7 +538,7 @@
             <div id="articleContent">
                 <h2 id="基因组组装"><a href="#基因组组装" class="headerlink" title="基因组组装"></a>基因组组装</h2><p>目前推荐两种主流的基因组组装方式：</p>
 <h3 id="Spades（一）"><a href="#Spades（一）" class="headerlink" title="Spades（一）"></a>Spades（一）</h3><p>简介：主流的组装方式中对于单基因组装，二代测序用Spades组装成草图的效果最好，辅以unicycler外加三代测序进行矫正可以得到质量很高的完成图。</p>
-<h5 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h5><p>github：<a target="_blank" rel="noopener" href="http://cab.spbu.ru/files/release3.14.0/SPAdes-3.14.0-Linux.tar.gz">http://cab.spbu.ru/files/release3.14.0/SPAdes-3.14.0-Linux.tar.gz</a></p>
+<h5 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h5><p>github：<a target="_blank" rel="noopener" href="https://codeload.github.com/ablab/spades/zip/refs/heads/spades_3.15.5">https://codeload.github.com/ablab/spades/zip/refs/heads/spades_3.15.5</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 解压</span></span><br><span class="line">tar -zxvf SPAdes-xxx-Linux.tar.gz</span><br><span class="line"><span class="built_in">cd</span> SPAdes-xxx-Linux/bin</span><br><span class="line"><span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 测试</span></span><br><span class="line">./spades.py --<span class="built_in">test</span></span><br><span class="line"><span class="comment"># 常规使用</span></span><br><span class="line">./spades.py ---pe1-1 gene_1.fq.gz --pe1-2 gene_2.fq.gz -t -8 -k 97,107,117,127 -o output</span><br><span class="line"><span class="comment"># 推荐终端后台挂机使用</span></span><br><span class="line"><span class="built_in">nohup</span> ./spades.py ---pe1-1 gene_1.fq.gz --pe1-2 gene_2.fq.gz -t -8 -k 97,107,117,127 -o output &gt;output.file 2&gt;&amp;1 &amp;</span><br><span class="line"><span class="comment"># 结果集存于output，运行状态文件输出至output.file</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="Megahit（二）"><a href="#Megahit（二）" class="headerlink" title="Megahit（二）"></a>Megahit（二）</h3><p>简介：megahit常用于宏基因组数据组装，其处理速度极佳，组装质量尚可，在无过高质量要求且项目进度紧迫时的最佳选择。megahit是SOAPdenovo2的官方升级版，各方面性能均优于前者，因此较为推荐。</p>
