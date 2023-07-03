@@ -6,7 +6,7 @@
   <link href="http://holyoke.github.io/atom.xml" rel="self"/>
   
   <link href="http://holyoke.github.io/"/>
-  <updated>2023-07-03T02:02:51.045Z</updated>
+  <updated>2023-07-03T09:03:31.853Z</updated>
   <id>http://holyoke.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Docker容器化及Dockerfile编写</title>
+    <link href="http://holyoke.github.io/2023/07/03/docker-rong-qi-hua-ji-dockerfile-bian-xie/"/>
+    <id>http://holyoke.github.io/2023/07/03/docker-rong-qi-hua-ji-dockerfile-bian-xie/</id>
+    <published>2023-07-03T08:50:27.000Z</published>
+    <updated>2023-07-03T09:03:31.853Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Docker部署流程&quot;&gt;&lt;a href=&quot;#Docker部署流程&quot; class=&quot;headerlink&quot; title=&quot;Docker部署流程&quot;&gt;&lt;/a&gt;Docker部署流程&lt;/h1&gt;&lt;h4 id=&quot;一、将程序打包成Docker镜像通常需要遵循以下步骤：&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="docker" scheme="http://holyoke.github.io/categories/docker/"/>
+    
+    
+    <category term="Docker" scheme="http://holyoke.github.io/tags/Docker/"/>
+    
+  </entry>
   
   <entry>
     <title>fate联邦学习部署</title>
@@ -56,27 +81,6 @@
     <summary type="html">&lt;p&gt;完成部署后：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;Fate%E9%85%8D%E7%BD%AE%E6%96%87%E6%A1%A3/image-20230629182051321.png&quot; alt=&quot;image-20230629182051321&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://holyoke.github.io/2023/06/26/lian-bang-xue-xi-fate-bu-shu/"/>
-    <id>http://holyoke.github.io/2023/06/26/lian-bang-xue-xi-fate-bu-shu/</id>
-    <published>2023-06-26T02:40:29.969Z</published>
-    <updated>2023-06-28T03:50:51.965Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、准备&quot;&gt;&lt;a href=&quot;#一、准备&quot; class=&quot;headerlink&quot; title=&quot;一、准备&quot;&gt;&lt;/a&gt;&lt;strong&gt;一、准备&lt;/strong&gt;&lt;/h2&gt;&lt;h5 id=&quot;1．-硬件&quot;&gt;&lt;a href=&quot;#1．-硬件&quot;</summary>
         
       
     
