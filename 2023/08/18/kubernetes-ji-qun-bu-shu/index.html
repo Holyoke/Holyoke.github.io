@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="conda使用, coding">
-    <meta name="description" content="conda包管理器">
+    <meta name="keywords" content="Kubernetes集群部署, coding">
+    <meta name="description" content="集群部署">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>conda使用 | LG的网站</title>
+    <title>Kubernetes集群部署 | LG的网站</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
     <style>
@@ -451,12 +451,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">conda使用</h1>
+                    <h1 class="description center-align post-title">Kubernetes集群部署</h1>
                 </div>
             </div>
         </div>
@@ -480,8 +480,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/conda/">
-                                <span class="chip bg-color">conda</span>
+                            <a href="/tags/k8s/">
+                                <span class="chip bg-color">k8s</span>
                             </a>
                         
                     </div>
@@ -492,8 +492,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/linux/" class="post-category">
-                                linux
+                            <a href="/categories/Kubernetes/" class="post-category">
+                                Kubernetes
                             </a>
                         
                     </div>
@@ -505,14 +505,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-11-14
+                    2023-08-18
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-12-16
+                    2023-08-18
                 </div>
                 
 
@@ -536,12 +536,27 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Conda-教程"><a href="#Conda-教程" class="headerlink" title="Conda 教程"></a>Conda 教程</h1><h2 id="To-create-a-new-env"><a href="#To-create-a-new-env" class="headerlink" title="To create a new env."></a>To create a new env.</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda create --name snowflakes biopython # name后接env名，空格后接预置library名</span><br><span class="line">conda create --name mypthon3 python=3.6 numpy</span><br></pre></td></tr></table></figure>
+                <h1 id="K8S集群部署实战"><a href="#K8S集群部署实战" class="headerlink" title="K8S集群部署实战"></a>K8S集群部署实战</h1><h4 id="一、minikube单集群部署"><a href="#一、minikube单集群部署" class="headerlink" title="一、minikube单集群部署"></a>一、minikube单集群部署</h4><h5 id="前置条件："><a href="#前置条件：" class="headerlink" title="前置条件："></a>前置条件：</h5><ul>
+<li><input checked="" disabled="" type="checkbox"> centos7以上稳定版操作系统</li>
+<li><input checked="" disabled="" type="checkbox"> 2 CPUs or more</li>
+<li><input checked="" disabled="" type="checkbox"> 2GB of free memory</li>
+<li><input checked="" disabled="" type="checkbox"> 20GB of free disk space</li>
+<li><input checked="" disabled="" type="checkbox"> Internet connection</li>
+<li><input checked="" disabled="" type="checkbox"> Container or virtual machine manager, such as: <a target="_blank" rel="noopener" href="https://minikube.sigs.k8s.io/docs/drivers/docker/">Docker</a>, <a target="_blank" rel="noopener" href="https://minikube.sigs.k8s.io/docs/drivers/qemu/">QEMU</a>, <a target="_blank" rel="noopener" href="https://minikube.sigs.k8s.io/docs/drivers/hyperkit/">Hyperkit</a>, <a target="_blank" rel="noopener" href="https://minikube.sigs.k8s.io/docs/drivers/hyperv/">Hyper-V</a>, <a target="_blank" rel="noopener" href="https://minikube.sigs.k8s.io/docs/drivers/kvm2/">KVM</a>, <a target="_blank" rel="noopener" href="https://minikube.sigs.k8s.io/docs/drivers/parallels/">Parallels</a>, <a target="_blank" rel="noopener" href="https://minikube.sigs.k8s.io/docs/drivers/podman/">Podman</a>, <a target="_blank" rel="noopener" href="https://minikube.sigs.k8s.io/docs/drivers/virtualbox/">VirtualBox</a>, or <a target="_blank" rel="noopener" href="https://minikube.sigs.k8s.io/docs/drivers/vmware/">VMware Fusion/Workstation</a></li>
+</ul>
+<h5 id="K8S核心组件："><a href="#K8S核心组件：" class="headerlink" title="K8S核心组件："></a>K8S核心组件：</h5><ul>
+<li>etcd保存整个集群状态；</li>
+<li>apiserver提供资源操作的唯一入口，提供认证、授权、访问控制、API注册和发现等机制；</li>
+<li>controller manager负责维护集群的状态，如故障检测、自动扩展、滚动更新；</li>
+<li>scheduler负责资源调度，按照预定的调度策略将Pod调度到相应的机器上；</li>
+<li>kubelet负责维护容器的生命周期，同时负责Volume(CVI)和网络(CNI)的管理；</li>
+<li>Container runtime负责镜像管理以及Pod和容器的真正运行(CRI)；</li>
+<li>kube-proxy负责为Service提供cluster内部的服务发现和负载均衡；</li>
+</ul>
+<p>​        <img src="Kubernetes%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2/image-20230818101952810-16923251963563.png" alt="image-20230818101952810"></p>
+<h5 id="minikube安装部署："><a href="#minikube安装部署：" class="headerlink" title="minikube安装部署："></a>minikube安装部署：</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Installation</span></span><br><span class="line">curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb</span><br><span class="line">sudo dpkg -i minikube_latest_amd64.deb</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Start your cluster</span></span><br><span class="line">minikube start</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Interact with your cluster(without root previlege and by kubectl)</span></span><br><span class="line">minikube kubectl -- get po -A</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Kubernetes Dashboard</span></span><br><span class="line">minikube dashboard</span><br></pre></td></tr></table></figure>
 
-<h2 id="Use-env"><a href="#Use-env" class="headerlink" title="Use env"></a>Use env</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">activate &quot;env_name&quot;</span><br><span class="line">deactivate</span><br></pre></td></tr></table></figure>
-
-<h2 id="Envs-info"><a href="#Envs-info" class="headerlink" title="Envs info"></a>Envs info</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda info --envs # 查看所有conda_</span><br></pre></td></tr></table></figure>
-
+<h5 id="特性："><a href="#特性：" class="headerlink" title="特性："></a>特性：</h5><p>minikube搭载了Kubernetes Dashboard，便于适应新环境</p>
 
                 
             </div>
@@ -568,7 +583,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://holyoke.github.io/2022/11/14/conda-shi-yong/">http://holyoke.github.io/2022/11/14/conda-shi-yong/</a>
+                    <a href="http://holyoke.github.io/2023/08/18/kubernetes-ji-qun-bu-shu/">http://holyoke.github.io/2023/08/18/kubernetes-ji-qun-bu-shu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -606,8 +621,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/conda/">
-                                    <span class="chip bg-color">conda</span>
+                                <a href="/tags/k8s/">
+                                    <span class="chip bg-color">k8s</span>
                                 </a>
                             
                         </div>
@@ -686,46 +701,48 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/11/17/xi-jun-ji-yin-zu-zu-zhuang/">
+                <a href="/2023/08/18/kubernetes-ji-qun-bu-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="细菌基因组组装">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Kubernetes集群部署">
                         
-                        <span class="card-title">细菌基因组组装</span>
+                        <span class="card-title">Kubernetes集群部署</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            spades、megahit
+                            集群部署
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-11-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-18
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%9F%BA%E5%9B%A0%E7%BB%84%E7%BB%84%E8%A3%85/" class="post-category">
-                                    基因组组装
+                            <a href="/categories/Kubernetes/" class="post-category">
+                                    Kubernetes
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Spades/">
-                        <span class="chip bg-color">Spades</span>
+                    <a href="/tags/k8s/">
+                        <span class="chip bg-color">k8s</span>
                     </a>
                     
                 </div>
@@ -739,31 +756,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/10/18/linux-yong-hu-guan-li-yu-shan-chu/">
+                <a href="/2023/07/03/docker-rong-qi-hua-ji-dockerfile-bian-xie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Linux用户管理与删除">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Docker容器化及Dockerfile编写">
                         
-                        <span class="card-title">Linux用户管理与删除</span>
+                        <span class="card-title">Docker容器化及Dockerfile编写</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            用户创建与删除
+                            容器化部署
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-10-18
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-03
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/linux/" class="post-category">
-                                    linux
+                            <a href="/categories/docker/" class="post-category">
+                                    docker
                                 </a>
                             
                             
@@ -773,8 +790,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/linux/">
-                        <span class="chip bg-color">linux</span>
+                    <a href="/tags/Docker/">
+                        <span class="chip bg-color">Docker</span>
                     </a>
                     
                 </div>

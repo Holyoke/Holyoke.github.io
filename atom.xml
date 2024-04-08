@@ -6,7 +6,7 @@
   <link href="http://holyoke.github.io/atom.xml" rel="self"/>
   
   <link href="http://holyoke.github.io/"/>
-  <updated>2023-07-03T09:03:31.853Z</updated>
+  <updated>2023-08-18T09:05:34.961Z</updated>
   <id>http://holyoke.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Kubernetes集群部署</title>
+    <link href="http://holyoke.github.io/2023/08/18/kubernetes-ji-qun-bu-shu/"/>
+    <id>http://holyoke.github.io/2023/08/18/kubernetes-ji-qun-bu-shu/</id>
+    <published>2023-08-18T01:33:13.000Z</published>
+    <updated>2023-08-18T09:05:34.961Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;K8S集群部署实战&quot;&gt;&lt;a href=&quot;#K8S集群部署实战&quot; class=&quot;headerlink&quot; title=&quot;K8S集群部署实战&quot;&gt;&lt;/a&gt;K8S集群部署实战&lt;/h1&gt;&lt;h4 id=&quot;一、minikube单集群部署&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Kubernetes" scheme="http://holyoke.github.io/categories/Kubernetes/"/>
+    
+    
+    <category term="k8s" scheme="http://holyoke.github.io/tags/k8s/"/>
+    
+  </entry>
   
   <entry>
     <title>Docker容器化及Dockerfile编写</title>

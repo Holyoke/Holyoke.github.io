@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Kubernetes集群部署</title>
+      <link href="/2023/08/18/kubernetes-ji-qun-bu-shu/"/>
+      <url>/2023/08/18/kubernetes-ji-qun-bu-shu/</url>
+      
+        <content type="html"><![CDATA[<h1 id="K8S集群部署实战"><a href="#K8S集群部署实战" class="headerlink" title="K8S集群部署实战"></a>K8S集群部署实战</h1><h4 id="一、minikube单集群部署"><a href="#一、minikube单集群部署" class="headerlink" title="一、minikube单集群部署"></a>一、minikube单集群部署</h4><h5 id="前置条件："><a href="#前置条件：" class="headerlink" title="前置条件："></a>前置条件：</h5><ul><li><input checked="" disabled="" type="checkbox"> centos7以上稳定版操作系统</li><li><input checked="" disabled="" type="checkbox"> 2 CPUs or more</li><li><input checked="" disabled="" type="checkbox"> 2GB of free memory</li><li><input checked="" disabled="" type="checkbox"> 20GB of free disk space</li><li><input checked="" disabled="" type="checkbox"> Internet connection</li><li><input checked="" disabled="" type="checkbox"> Container or virtual machine manager, such as: <a href="https://minikube.sigs.k8s.io/docs/drivers/docker/">Docker</a>, <a href="https://minikube.sigs.k8s.io/docs/drivers/qemu/">QEMU</a>, <a href="https://minikube.sigs.k8s.io/docs/drivers/hyperkit/">Hyperkit</a>, <a href="https://minikube.sigs.k8s.io/docs/drivers/hyperv/">Hyper-V</a>, <a href="https://minikube.sigs.k8s.io/docs/drivers/kvm2/">KVM</a>, <a href="https://minikube.sigs.k8s.io/docs/drivers/parallels/">Parallels</a>, <a href="https://minikube.sigs.k8s.io/docs/drivers/podman/">Podman</a>, <a href="https://minikube.sigs.k8s.io/docs/drivers/virtualbox/">VirtualBox</a>, or <a href="https://minikube.sigs.k8s.io/docs/drivers/vmware/">VMware Fusion/Workstation</a></li></ul><h5 id="K8S核心组件："><a href="#K8S核心组件：" class="headerlink" title="K8S核心组件："></a>K8S核心组件：</h5><ul><li>etcd保存整个集群状态；</li><li>apiserver提供资源操作的唯一入口，提供认证、授权、访问控制、API注册和发现等机制；</li><li>controller manager负责维护集群的状态，如故障检测、自动扩展、滚动更新；</li><li>scheduler负责资源调度，按照预定的调度策略将Pod调度到相应的机器上；</li><li>kubelet负责维护容器的生命周期，同时负责Volume(CVI)和网络(CNI)的管理；</li><li>Container runtime负责镜像管理以及Pod和容器的真正运行(CRI)；</li><li>kube-proxy负责为Service提供cluster内部的服务发现和负载均衡；</li></ul><p>​        <img src="Kubernetes%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2/image-20230818101952810-16923251963563.png" alt="image-20230818101952810"></p><h5 id="minikube安装部署："><a href="#minikube安装部署：" class="headerlink" title="minikube安装部署："></a>minikube安装部署：</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Installation</span></span><br><span class="line">curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb</span><br><span class="line">sudo dpkg -i minikube_latest_amd64.deb</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Start your cluster</span></span><br><span class="line">minikube start</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Interact with your cluster(without root previlege and by kubectl)</span></span><br><span class="line">minikube kubectl -- get po -A</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Kubernetes Dashboard</span></span><br><span class="line">minikube dashboard</span><br></pre></td></tr></table></figure><h5 id="特性："><a href="#特性：" class="headerlink" title="特性："></a>特性：</h5><p>minikube搭载了Kubernetes Dashboard，便于适应新环境</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Kubernetes </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> k8s </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Docker容器化及Dockerfile编写</title>
       <link href="/2023/07/03/docker-rong-qi-hua-ji-dockerfile-bian-xie/"/>
       <url>/2023/07/03/docker-rong-qi-hua-ji-dockerfile-bian-xie/</url>
